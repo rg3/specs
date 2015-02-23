@@ -1,4 +1,4 @@
-# SPEC file to create a package
+# SPEC file for mpv
 #
 # Written in 2015 by Ricardo Garcia <public at rg3.name>
 #
