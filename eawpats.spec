@@ -12,7 +12,7 @@
 #
 Name:		eawpats
 Version:	12
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Eric Welsh's GUS patches for TiMidity
 
 Group:		Applications/Multimedia
@@ -35,10 +35,12 @@ Requires:	timidity++
 %install
 %global patsdir %{_datadir}/timidity/%{name}
 %global patscopydir %{buildroot}/%{patsdir}
+%global patsconfigpath %{_sysconfdir}/timidity-%{name}.cfg
+%global stdconfigpath %{_sysconfdir}/timidity.cfg
 mkdir -p %{patscopydir}
 cp -R * %{patscopydir}
 mkdir -p %{buildroot}/%{_sysconfdir}
-cat >%{buildroot}/%{_sysconfdir}/timidity-%{name}.cfg <<EOF
+cat >%{buildroot}/%{patsconfigpath} <<EOF
 dir %{patsdir}
 source gravis.cfg
 source gsdrums.cfg
@@ -52,6 +54,11 @@ EOF
 %{patsdir}/*
 
 
+
+%post
+if [ ! -e %{stdconfigpath} ]; then
+    /bin/cp %{patsconfigpath} %{stdconfigpath}
+fi
 
 %changelog
 
