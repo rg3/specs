@@ -12,7 +12,7 @@
 #
 Name:		eawpats
 Version:	12
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	Eric Welsh's GUS patches for TiMidity
 
 Group:		Applications/Multimedia
@@ -58,6 +58,15 @@ EOF
 %post
 if [ ! -e %{stdconfigpath} ]; then
     /bin/cp %{patsconfigpath} %{stdconfigpath}
+fi
+
+%preun
+if [ -f %{stdconfigpath} -a -f %{patsconfigpath} ]; then
+   STDSUM=$( /bin/sha1sum <%{stdconfigpath} | /bin/cut -d' ' -f1 )
+   PATSUM=$( /bin/sha1sum <%{patsconfigpath} | /bin/cut -d' ' -f1 )
+   if [ "$STDSUM" == "$PATSUM" ]; then
+       /bin/rm %{stdconfigpath}
+   fi
 fi
 
 %changelog
