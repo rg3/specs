@@ -20,7 +20,9 @@ License:	Unredistributable
 URL:		http://ffmpeg.org/
 Source0:	%{name}-%{version}.tar.bz2
 
-BuildRequires:	yasm openssl-devel
+BuildRequires:	yasm
+BuildRequires:	openssl-devel
+BuildRequires:	lame
 
 %description
 
