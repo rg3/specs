@@ -20,6 +20,8 @@ License:	GPLv2
 URL:		http://mpv.io/
 Source0:	%{name}-%{version}.tar.gz
 
+BuildRequires:	lua-devel
+BuildRequires:	ffmpeg
 
 %description
 
