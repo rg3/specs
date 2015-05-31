@@ -12,7 +12,7 @@
 #
 Name:		eawpats
 Version:	12
-Release:	3%{?dist}
+Release:	1%{?dist}
 Summary:	Eric Welsh's GUS patches for TiMidity
 
 Group:		Applications/Multimedia
