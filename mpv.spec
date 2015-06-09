@@ -12,7 +12,7 @@
 #
 Name:		mpv
 Version:	0.9.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Media Player
 
 Group:		Applications/Multimedia
@@ -20,7 +20,7 @@ License:	GPLv2
 URL:		http://mpv.io/
 Source0:	%{name}-%{version}.tar.gz
 
-BuildRequires:	lua-devel
+BuildRequires:	luajit-devel
 BuildRequires:	ffmpeg
 
 %description
