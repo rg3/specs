@@ -23,6 +23,7 @@ Source0:	%{name}-%{version}.tar.bz2
 BuildRequires:	yasm
 BuildRequires:	openssl-devel
 BuildRequires:	lame
+BuildRequires:	x264
 
 %description
 
