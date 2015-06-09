@@ -1,6 +1,6 @@
 # SPEC file for moc
 #
-# Written in 2015 by Ricardo Garcia <public at rg3.name>
+# Written in 2015 by Ricardo Garcia <r@rg3.name>
 #
 # To the extent possible under law, the author(s) have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
