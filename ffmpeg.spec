@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		ffmpeg
-Version:	2.7.1
+Version:	2.7.2
 Release:	1%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
@@ -24,6 +24,7 @@ BuildRequires:	yasm
 BuildRequires:	openssl-devel
 BuildRequires:	lame
 BuildRequires:	x264
+BuildRequires:  libvpx-devel
 
 %description
 
