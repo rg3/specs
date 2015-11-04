@@ -12,7 +12,7 @@
 #
 Name:		mpv
 Version:	0.12.0
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Media Player
 
 Group:		Applications/Multimedia
@@ -21,6 +21,7 @@ URL:		http://mpv.io/
 Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	luajit-devel
+BuildRequires:	libcdio-paranoia-devel
 BuildRequires:	ffmpeg
 
 %description
