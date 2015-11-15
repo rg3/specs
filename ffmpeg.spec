@@ -26,6 +26,8 @@ BuildRequires:	lame
 BuildRequires:	x264
 BuildRequires:  libvpx-devel
 
+%global debug_package %{nil}
+
 %description
 
 
