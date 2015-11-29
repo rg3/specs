@@ -20,6 +20,7 @@ License:	Proprietary
 URL:		http://www.rarlab.com/
 Source0:	unrarsrc-%{version}.tar.gz
 
+%global debug_package %{nil}
 
 %description
 
