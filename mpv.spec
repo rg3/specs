@@ -24,6 +24,8 @@ BuildRequires:	luajit-devel
 BuildRequires:	libcdio-paranoia-devel
 BuildRequires:	ffmpeg
 
+%global debug_package %{nil}
+
 %description
 
 
