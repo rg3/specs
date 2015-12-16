@@ -20,9 +20,10 @@ License:	GPLv2
 URL:		http://mpv.io/
 Source0:	%{name}-%{version}.tar.gz
 
-BuildRequires:	luajit-devel
-BuildRequires:	libcdio-paranoia-devel
 BuildRequires:	ffmpeg
+BuildRequires:	luajit-devel
+BuildRequires:	libass-devel
+BuildRequires:	libcdio-paranoia-devel
 
 %global debug_package %{nil}
 
