@@ -12,7 +12,7 @@
 #
 Name:		mpv
 Version:	0.14.0
-Release:	1%{?dist}
+Release:	4%{?dist}
 Summary:	Media Player
 
 Group:		Applications/Multimedia
