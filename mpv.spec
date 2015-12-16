@@ -36,7 +36,7 @@ BuildRequires:	libcdio-paranoia-devel
 
 %build
 ./bootstrap.py
-./waf configure --prefix=%{_prefix} --mandir=%{_mandir} --confdir=%{_sysconfdir} --libdir=%{_libdir}
+./waf configure --prefix=%{_prefix} --mandir=%{_mandir} --confdir=%{_sysconfdir}/%{name} --libdir=%{_libdir}
 ./waf build
 
 
@@ -46,7 +46,7 @@ DESTDIR=%{buildroot} ./waf install
 
 %files
 %doc [A-Z][A-Z][A-Z]*
-%{_sysconfdir}/*
+%{_sysconfdir}/%{name}/*
 %{_mandir}/man*/*
 %{_bindir}/*
 %{_datadir}/*/*/*/*/*
