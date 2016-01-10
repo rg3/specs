@@ -12,7 +12,7 @@
 #
 Name:		mpv
 Version:	0.14.0
-Release:	4%{?dist}
+Release:	5%{?dist}
 Summary:	Media Player
 
 Group:		Applications/Multimedia
@@ -24,6 +24,7 @@ BuildRequires:	ffmpeg
 BuildRequires:	luajit-devel
 BuildRequires:	libass-devel
 BuildRequires:	libcdio-paranoia-devel
+BuildRequires:	libv4l-devel
 
 %global debug_package %{nil}
 
