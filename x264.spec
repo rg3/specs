@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		x264
-Version:	20151018_1012_git7599210
+Version:	20160124_1000_gita01e339
 Release:	1%{?dist}
 Summary:	H.264 library
 
@@ -21,7 +21,8 @@ URL:		http://www.videolan.org/developers/x264.html
 Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	yasm
-#Requires:	
+
+%global debug_package %{nil}
 
 %description
 
