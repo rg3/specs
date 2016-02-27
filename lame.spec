@@ -20,6 +20,8 @@ License:	LGPLv2
 URL:		http://lame.sourceforge.net/
 Source0:	lame-3.99.5.tar.gz
 
+%global debug_package %{nil}
+
 %description
 
 

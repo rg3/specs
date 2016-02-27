@@ -21,6 +21,8 @@ URL:		http://www.underbit.com/products/mad/
 Source0:	%{name}-%{version}.tar.gz
 Patch0:		%{name}-remove-force-mem.patch
 
+%global debug_package %{nil}
+
 %description
 
 

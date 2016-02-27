@@ -20,6 +20,8 @@ License:	GPLv2
 URL:		http://www.videolan.org/developers/libdvdcss.html
 Source0:	%{name}-%{version}.tar.bz2
 
+%global debug_package %{nil}
+
 %description
 
 
