@@ -12,7 +12,7 @@
 #
 Name:		ffmpeg2.8
 Version:	2.8.6
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
 Group:		Applications/Multimedia
@@ -68,10 +68,9 @@ EOF
 
 
 %files
-%{_includedir}/%{name}/*/*
-%{_libdir}/%{name}/pkgconfig/*
-%{_libdir}/%{name}/lib*
-%{_sysconfdir}/*
+%{_includedir}/%{name}
+%{_libdir}/%{name}
+%{_sysconfdir}/ld.so.conf.d/*
 
 
 %post -p /sbin/ldconfig
