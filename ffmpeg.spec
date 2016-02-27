@@ -11,8 +11,8 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		ffmpeg
-Version:	2.8.6
-Release:	1%{?dist}
+Version:	3.0
+Release:	2%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
 Group:		Applications/Multimedia
@@ -24,7 +24,8 @@ BuildRequires:	yasm
 BuildRequires:	openssl-devel
 BuildRequires:	lame
 BuildRequires:	x264
-BuildRequires:  libvpx-devel
+BuildRequires:	libvpx-devel
+BuildRequires:	pulseaudio-libs-devel
 
 %global debug_package %{nil}
 
@@ -36,7 +37,21 @@ BuildRequires:  libvpx-devel
 
 
 %build
-./configure --prefix=%{_prefix} --libdir=%{_libdir} --shlibdir=%{_libdir} --mandir=%{_mandir} --enable-gpl --enable-nonfree --disable-doc --enable-postproc --enable-libmp3lame --enable-libx264 --enable-shared --enable-openssl
+./configure \
+	--prefix=%{_prefix} \
+	--libdir=%{_libdir} \
+	--shlibdir=%{_libdir} \
+	--mandir=%{_mandir} \
+	--disable-doc \
+	--enable-shared \
+	--enable-gpl \
+	--enable-version3 \
+	--enable-nonfree \
+	--enable-postproc \
+	--enable-libmp3lame \
+	--enable-libx264 \
+	--enable-openssl \
+	--enable-libpulse
 make %{?_smp_mflags}
 
 
