@@ -25,6 +25,7 @@ BuildRequires:	openssl-devel
 BuildRequires:	lame
 BuildRequires:	x264
 BuildRequires:	libvpx-devel
+BuildRequires:	libvorbis-devel
 BuildRequires:	pulseaudio-libs-devel
 
 %global debug_package %{nil}
