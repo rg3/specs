@@ -25,6 +25,8 @@ BuildRequires:	openssl-devel
 BuildRequires:	lame
 BuildRequires:	x264
 BuildRequires:	libvpx-devel
+BuildRequires:	libvorbis-devel
+BuildRequires:	pulseaudio-libs-devel
 
 %global debug_package %{nil}
 
@@ -54,7 +56,8 @@ BuildRequires:	libvpx-devel
 	--enable-postproc \
 	--enable-libmp3lame \
 	--enable-libx264 \
-	--enable-openssl
+	--enable-openssl \
+	--enable-libpulse
 make %{?_smp_mflags}
 
 
