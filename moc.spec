@@ -58,7 +58,6 @@ make install DESTDIR=%{buildroot}
 %{_datadir}/%{name}/themes/*
 
 
-
-
 %changelog
+
 

@@ -60,6 +60,6 @@ DESTDIR=%{buildroot} ./waf install
 %{_datadir}/doc/%{name}/*
 
 
-
 %changelog
+
 

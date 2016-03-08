@@ -46,7 +46,6 @@ make install DESTDIR=%{buildroot}
 %{_libdir}/lib*
 
 
-
 %post -p /sbin/ldconfig
 
 
@@ -54,4 +53,5 @@ make install DESTDIR=%{buildroot}
 
 
 %changelog
+
 

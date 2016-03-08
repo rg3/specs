@@ -54,11 +54,11 @@ EOF
 %{patsdir}/*
 
 
-
 %post
 if [ ! -e %{stdconfigpath} ]; then
     /bin/cp %{patsconfigpath} %{stdconfigpath}
 fi
+
 
 %preun
 if [ -f %{stdconfigpath} -a -f %{patsconfigpath} ]; then
@@ -69,5 +69,7 @@ if [ -f %{stdconfigpath} -a -f %{patsconfigpath} ]; then
    fi
 fi
 
+
 %changelog
+
 
