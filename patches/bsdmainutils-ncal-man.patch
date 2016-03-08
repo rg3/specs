@@ -1,7 +1,7 @@
 diff -urN a/usr.bin/ncal/ncal.1 b/usr.bin/ncal/ncal.1
 --- a/usr.bin/ncal/ncal.1	2014-10-17 15:48:27.000000000 +0200
-+++ b/usr.bin/ncal/ncal.1	2016-03-08 20:57:31.753979257 +0100
-@@ -28,7 +28,6 @@
++++ b/usr.bin/ncal/ncal.1	2016-03-08 23:08:30.224787359 +0100
+@@ -28,24 +28,9 @@
  .Dt CAL 1
  .Os
  .Sh NAME
@@ -9,7 +9,24 @@ diff -urN a/usr.bin/ncal/ncal.1 b/usr.bin/ncal/ncal.1
  .Nm ncal
  .Nd displays a calendar and the date of Easter
  .Sh SYNOPSIS
-@@ -66,10 +65,11 @@
+-.Nm
+-.Op Fl 3hjy
+-.Op Fl A Ar number
+-.Op Fl B Ar number
+-.Oo
+-.Op Ar month
+-.Ar year
+-.Oc
+-.Nm
+-.Op Fl 3hj
+-.Op Fl A Ar number
+-.Op Fl B Ar number
+-.Fl m Ar month
+-.Op Ar year
+ .Nm ncal
+ .Op Fl 3hjJpwy
+ .Op Fl A Ar number
+@@ -66,10 +51,11 @@
  .Op Fl d Ar yyyy-mm
  .Sh DESCRIPTION
  The
@@ -24,7 +41,7 @@ diff -urN a/usr.bin/ncal/ncal.1 b/usr.bin/ncal/ncal.1
  The new format is a little cramped but it makes a year fit
  on a 25x80 terminal.
  If arguments are not specified,
-@@ -151,14 +151,14 @@
+@@ -151,14 +137,14 @@
  .Pp
  A single parameter specifies the year (1\(en9999) to be displayed;
  note the year must be fully specified:
@@ -41,3 +58,12 @@ diff -urN a/usr.bin/ncal/ncal.1 b/usr.bin/ncal/ncal.1
  will display a calendar for the month of August in the current
  year).
  .Pp
+@@ -176,7 +162,7 @@
+ .Xr strftime 3
+ .Sh HISTORY
+ A
+-.Nm
++.Nm cal
+ command appeared in
+ .At v5 .
+ The
