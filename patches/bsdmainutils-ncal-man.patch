@@ -1,0 +1,43 @@
+diff -urN a/usr.bin/ncal/ncal.1 b/usr.bin/ncal/ncal.1
+--- a/usr.bin/ncal/ncal.1	2014-10-17 15:48:27.000000000 +0200
++++ b/usr.bin/ncal/ncal.1	2016-03-08 20:57:31.753979257 +0100
+@@ -28,7 +28,6 @@
+ .Dt CAL 1
+ .Os
+ .Sh NAME
+-.Nm cal ,
+ .Nm ncal
+ .Nd displays a calendar and the date of Easter
+ .Sh SYNOPSIS
+@@ -66,10 +65,11 @@
+ .Op Fl d Ar yyyy-mm
+ .Sh DESCRIPTION
+ The
+-.Nm
+-utility displays a simple calendar in traditional format and
+ .Nm ncal
+-offers an alternative layout, more options and the date of Easter.
++utility displays a simple calendar in an alternative layout compared
++to
++.Xr cal 1 ,
++with more options and the date of Easter.
+ The new format is a little cramped but it makes a year fit
+ on a 25x80 terminal.
+ If arguments are not specified,
+@@ -151,14 +151,14 @@
+ .Pp
+ A single parameter specifies the year (1\(en9999) to be displayed;
+ note the year must be fully specified:
+-.Dq Li cal 89
++.Dq Li ncal 89
+ will
+ .Em not
+ display a calendar for 1989.  Two parameters denote the month and
+ year; the month is either a number between 1 and 12, or a full or
+ abbreviated name as specified by the current locale.  Month and
+ year default to those of the current system clock and time zone (so
+-.Dq Li cal -m 8
++.Dq Li ncal -m 8
+ will display a calendar for the month of August in the current
+ year).
+ .Pp

@@ -1,0 +1,13 @@
+diff -urN a/usr.bin/ncal/Makefile b/usr.bin/ncal/Makefile
+--- a/usr.bin/ncal/Makefile	2014-04-27 11:35:22.000000000 +0200
++++ b/usr.bin/ncal/Makefile	2016-03-08 21:04:03.073327618 +0100
+@@ -6,6 +6,6 @@
+ topdir=../..
+ include $(topdir)/config.mk
+ 
+-install-2:
+-	(cd $(bindir); ln -sf ncal cal)
+-	(cd $(mandir); ln -sf ncal.1 cal.1)
++#install-2:
++#	(cd $(bindir); ln -sf ncal cal)
++#	(cd $(mandir); ln -sf ncal.1 cal.1)
