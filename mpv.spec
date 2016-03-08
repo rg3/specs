@@ -12,11 +12,11 @@
 #
 Name:		mpv
 Version:	0.16.0
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Media Player
 
 Group:		Applications/Multimedia
-License:	GPLv2
+License:	GPLv3
 URL:		http://mpv.io/
 Source0:	%{name}-%{version}.tar.gz
 
@@ -37,7 +37,12 @@ BuildRequires:	libv4l-devel
 
 %build
 ./bootstrap.py
-./waf configure --prefix=%{_prefix} --mandir=%{_mandir} --confdir=%{_sysconfdir}/%{name} --libdir=%{_libdir}
+./waf configure \
+	--prefix=%{_prefix} \
+	--mandir=%{_mandir} \
+	--confdir=%{_sysconfdir}/%{name} \
+	--libdir=%{_libdir} \
+	--enable-gpl3
 ./waf build
 
 
