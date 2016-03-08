@@ -47,5 +47,9 @@ make install DESTDIR=%{buildroot}
 
 %post -p /sbin/ldconfig
 
+
+%postun -p /sbin/ldconfig
+
+
 %changelog
 
