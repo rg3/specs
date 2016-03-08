@@ -18,7 +18,7 @@ Summary:	MP3 encoding library and tool
 Group:		Applications/Multimedia
 License:	LGPLv2
 URL:		http://lame.sourceforge.net/
-Source0:	lame-3.99.5.tar.gz
+Source0:	%{name}-%{version}.tar.gz
 
 %global debug_package %{nil}
 
