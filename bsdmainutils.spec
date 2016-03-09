@@ -39,6 +39,8 @@ Patch3:		%{name}-ncal-symlinks.patch
 
 
 %build
+# Avoid the ncal manual Debian patch and use ours instead.
+sed -i '/^ncal_man\.diff$/d' debian/patches/series
 for p in $( cat debian/patches/series ); do
 	patch -Np1 <debian/patches/"$p";
 done
