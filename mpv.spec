@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		mpv
-Version:	0.16.0
+Version:	0.17.0
 Release:	2%{?dist}
 Summary:	Media Player
 
@@ -48,11 +48,12 @@ BuildRequires:	libv4l-devel
 
 %install
 DESTDIR=%{buildroot} ./waf install
+mkdir -p %{buildroot}/%{_sysconfdir}/%{name}
 
 
 %files
 %doc [A-Z][A-Z][A-Z]*
-%{_sysconfdir}/%{name}/*
+%{_sysconfdir}/%{name}
 %{_mandir}/man*/*
 %{_bindir}/*
 %{_datadir}/*/*/*/*/*
