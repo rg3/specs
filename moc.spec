@@ -11,14 +11,14 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		moc
-Version:	2.5.0_trunk_r2816
+Version:	2.5.1
 Release:	1%{?dist}
 Summary:	Music On Console
 
 Group:		Applications/Multimedia
 License:	GPLv2
 URL:		http://moc.daper.net/
-Source0:	%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.bz2
 
 BuildRequires:	ncurses-devel
 BuildRequires:	libdb-devel
@@ -40,7 +40,6 @@ BuildRequires:	popt-devel
 
 
 %build
-autoreconf -i
 %configure
 make %{?_smp_mflags}
 
