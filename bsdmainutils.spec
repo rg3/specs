@@ -11,8 +11,8 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		bsdmainutils
-Version:	9.0.6
-Release:	2%{?dist}
+Version:	9.0.10
+Release:	1%{?dist}
 Summary:	Small group of tools taken from BSD systems
 
 Group:		Applications/System
@@ -21,8 +21,7 @@ URL:		https://packages.debian.org/unstable/utils/bsdmainutils
 Source0:	%{name}_%{version}.tar.gz
 Patch0:		%{name}-no-root.patch
 Patch1:		%{name}-from-man.patch
-Patch2:		%{name}-ncal-man.patch
-Patch3:		%{name}-ncal-symlinks.patch
+Patch2:		%{name}-ncal-symlinks.patch
 
 %global debug_package %{nil}
 %global subdirs "usr.bin/from usr.bin/lorder usr.bin/ncal"
@@ -31,16 +30,14 @@ Patch3:		%{name}-ncal-symlinks.patch
 
 
 %prep
-%setup -q
+%setup -q -n %{name}
 %patch0 -p1
 %patch1 -p1
 %patch2 -p1
-%patch3 -p1
 
 
 %build
 # Avoid the ncal manual Debian patch and use ours instead.
-sed -i '/^ncal_man\.diff$/d' debian/patches/series
 for p in $( cat debian/patches/series ); do
 	patch -Np1 <debian/patches/"$p";
 done
