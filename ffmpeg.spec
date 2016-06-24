@@ -63,7 +63,7 @@ make install DESTDIR=%{buildroot}
 %files
 %doc [A-Z][A-Z][A-Z]*
 %{_includedir}/*/*
-%{_datadir}/%{name}/*
+%{_datadir}/%{name}
 %{_bindir}/*
 %{_libdir}/pkgconfig/*
 %{_libdir}/lib*

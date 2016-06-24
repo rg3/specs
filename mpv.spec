@@ -58,7 +58,7 @@ mkdir -p %{buildroot}/%{_sysconfdir}/%{name}
 %{_bindir}/*
 %{_datadir}/*/*/*/*/*
 %{_datadir}/applications/*
-%{_datadir}/doc/%{name}/*
+%{_datadir}/doc/%{name}
 
 
 %changelog

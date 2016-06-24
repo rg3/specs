@@ -41,7 +41,7 @@ make install DESTDIR=%{buildroot}
 %files
 %doc [A-Z][A-Z][A-Z]*
 %{_bindir}/*
-%{_includedir}/%{name}/*
+%{_includedir}/%{name}
 %{_libdir}/*
 %{_mandir}/man*/*
 

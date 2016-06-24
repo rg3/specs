@@ -51,10 +51,10 @@ make install DESTDIR=%{buildroot}
 %files
 %doc [A-Z][A-Z][A-Z]*
 %{_bindir}/*
-%{_libdir}/%{name}/*
+%{_libdir}/%{name}
 %{_mandir}/man*/*
-%{_datadir}/doc/%{name}/*
-%{_datadir}/%{name}/themes/*
+%{_datadir}/doc/%{name}
+%{_datadir}/%{name}
 
 
 %changelog
