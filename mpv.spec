@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		mpv
-Version:	0.17.0
+Version:	0.18.0
 Release:	1%{?dist}
 Summary:	Media Player
 
@@ -41,8 +41,7 @@ BuildRequires:	libv4l-devel
 	--prefix=%{_prefix} \
 	--mandir=%{_mandir} \
 	--confdir=%{_sysconfdir}/%{name} \
-	--libdir=%{_libdir} \
-	--enable-gpl3
+	--libdir=%{_libdir}
 ./waf build
 
 
