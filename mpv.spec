@@ -41,7 +41,8 @@ BuildRequires:	libv4l-devel
 	--prefix=%{_prefix} \
 	--mandir=%{_mandir} \
 	--confdir=%{_sysconfdir}/%{name} \
-	--libdir=%{_libdir}
+	--libdir=%{_libdir} \
+
 ./waf build
 
 
