@@ -52,7 +52,8 @@ BuildRequires:	pulseaudio-libs-devel
 	--enable-libmp3lame \
 	--enable-libx264 \
 	--enable-openssl \
-	--enable-libpulse
+	--enable-libpulse \
+
 make %{?_smp_mflags}
 
 
