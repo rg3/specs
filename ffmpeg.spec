@@ -12,7 +12,7 @@
 #
 Name:		ffmpeg
 Version:	3.1.1
-Release:	1%{?dist}
+Release:	3%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
 Group:		Applications/Multimedia
@@ -27,6 +27,7 @@ BuildRequires:	x264
 BuildRequires:	libvpx-devel
 BuildRequires:	libvorbis-devel
 BuildRequires:	pulseaudio-libs-devel
+BuildRequires:	opus-devel
 
 %global debug_package %{nil}
 
@@ -53,6 +54,8 @@ BuildRequires:	pulseaudio-libs-devel
 	--enable-libx264 \
 	--enable-openssl \
 	--enable-libpulse \
+	--enable-libvpx \
+	--enable-libopus \
 
 make %{?_smp_mflags}
 
