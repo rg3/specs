@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		x264
-Version:	20160618_1626_git3f5ed56
+Version:	20160925_1215_git72d53ab
 Release:	1%{?dist}
 Summary:	H.264 library
 
