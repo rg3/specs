@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		ffmpeg
-Version:	3.1.3
+Version:	3.1.4
 Release:	1%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
