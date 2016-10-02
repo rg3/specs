@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		bsdmainutils
-Version:	9.0.10
+Version:	9.0.11
 Release:	1%{?dist}
 Summary:	Small group of tools taken from BSD systems
 
@@ -37,7 +37,6 @@ Patch2:		%{name}-ncal-symlinks.patch
 
 
 %build
-# Avoid the ncal manual Debian patch and use ours instead.
 for p in $( cat debian/patches/series ); do
 	patch -Np1 <debian/patches/"$p";
 done
