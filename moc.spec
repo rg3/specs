@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		moc
-Version:	2.5.1
+Version:	2.5.2
 Release:	1%{?dist}
 Summary:	Music On Console
 
