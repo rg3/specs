@@ -12,7 +12,7 @@
 #
 Name:		moc
 Version:	2.5.2
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Music On Console
 
 Group:		Applications/Multimedia
