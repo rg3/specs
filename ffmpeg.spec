@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		ffmpeg
-Version:	3.3
+Version:	3.3.1
 Release:	1%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
@@ -22,7 +22,7 @@ Source0:	%{name}-%{version}.tar.bz2
 
 BuildRequires:	yasm
 BuildRequires:	openssl-devel
-BuildRequires:	lame
+BuildRequires:	lame-devel
 BuildRequires:	x264
 BuildRequires:	libvpx-devel
 BuildRequires:	libvorbis-devel
