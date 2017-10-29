@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		bsdmainutils
-Version:	9.0.12
+Version:	9.0.14
 Release:	1%{?dist}
 Summary:	Small group of tools taken from BSD systems
 
