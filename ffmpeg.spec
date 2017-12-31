@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		ffmpeg
-Version:	3.4.1
+Version:	3.4.900
 Release:	1%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
@@ -51,11 +51,11 @@ BuildRequires:	opus-devel
 	--enable-nonfree \
 	--enable-postproc \
 	--enable-libmp3lame \
-	--enable-libx264 \
 	--enable-openssl \
 	--enable-libpulse \
 	--enable-libvpx \
 	--enable-libopus \
+	--enable-libx264 \
 
 make %{?_smp_mflags}
 
