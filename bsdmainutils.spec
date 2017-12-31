@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		bsdmainutils
-Version:	9.0.14
+Version:	11.1.2
 Release:	1%{?dist}
 Summary:	Small group of tools taken from BSD systems
 
@@ -22,6 +22,8 @@ Source0:	%{name}_%{version}.tar.gz
 Patch0:		%{name}-no-root.patch
 Patch1:		%{name}-from-man.patch
 Patch2:		%{name}-ncal-symlinks.patch
+
+BuildRequires:	libbsd-devel
 
 %global debug_package %{nil}
 %global subdirs "usr.bin/from usr.bin/lorder usr.bin/ncal"
