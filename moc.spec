@@ -1,6 +1,6 @@
 # SPEC file for moc
 #
-# Written in 2015-2016 by Ricardo Garcia <r@rg3.name>
+# Written in 2015-2018 by Ricardo Garcia <r@rg3.name>
 #
 # To the extent possible under law, the author(s) have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
@@ -12,7 +12,7 @@
 #
 Name:		moc
 Version:	2.5.2
-Release:	2%{?dist}
+Release:	1%{?dist}
 Summary:	Music On Console
 
 Group:		Applications/Multimedia
@@ -29,6 +29,7 @@ BuildRequires:	libtool-ltdl-devel
 BuildRequires:	ffmpeg
 BuildRequires:	gettext-devel
 BuildRequires:	popt-devel
+BuildRequires:	ffmpeg3.4
 
 %global debug_package %{nil}
 
@@ -40,6 +41,8 @@ BuildRequires:	popt-devel
 
 
 %build
+PKG_CONFIG_PATH=%{_libdir}/ffmpeg3.4/pkgconfig
+export PKG_CONFIG_PATH
 %configure
 make %{?_smp_mflags}
 
