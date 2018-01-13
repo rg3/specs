@@ -1,6 +1,6 @@
 # SPEC file for bsdmainutils
 #
-# Written in 2016 by Ricardo Garcia <r@rg3.name>
+# Written in 2016-2018 by Ricardo Garcia <r@rg3.name>
 #
 # To the extent possible under law, the author(s) have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
