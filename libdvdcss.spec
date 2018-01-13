@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		libdvdcss
-Version:	1.2.13
+Version:	1.4.1
 Release:	1%{?dist}
 Summary:	CSS decryption library
 
