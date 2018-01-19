@@ -12,7 +12,7 @@
 #
 Name:		ffmpeg3.4
 Version:	3.4.1
-Release:	2%{?dist}
+Release:	3%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
 Group:		Applications/Multimedia
@@ -66,7 +66,7 @@ make %{?_smp_mflags}
 
 %install
 make install DESTDIR=%{buildroot}
-rm -fr %{buildroot}%{_datarootdir}/ffmpeg/examples
+make uninstall-examples DESTDIR=%{buildroot}
 find %{buildroot} -type l -name '*.so' -print0 | xargs -0r rm
 mkdir -p %{buildroot}%{_sysconfdir}/ld.so.conf.d
 cat >%{buildroot}%{_sysconfdir}/ld.so.conf.d/%{name}-%{_arch}.conf <<EOF
