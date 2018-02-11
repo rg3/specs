@@ -18,7 +18,7 @@ Summary:	Multimedia framework, libraries and tools
 Group:		Applications/Multimedia
 License:	Unredistributable
 URL:		http://ffmpeg.org/
-Source0:	%{name}-%{version}.tar.bz2
+Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	yasm
 BuildRequires:	openssl-devel
