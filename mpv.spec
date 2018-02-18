@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		mpv
-Version:	0.28.1
+Version:	0.28.2
 Release:	1%{?dist}
 Summary:	Media Player
 
