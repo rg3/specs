@@ -19,6 +19,7 @@ Group:		Applications/Multimedia
 License:	GPLv2
 URL:		http://moc.daper.net/
 Source0:	%{name}-%{version}.tar.bz2
+Patch0:		%{name}-ffmpeg4.patch
 
 BuildRequires:	ncurses-devel
 BuildRequires:	libdb-devel
@@ -29,7 +30,6 @@ BuildRequires:	libtool-ltdl-devel
 BuildRequires:	ffmpeg
 BuildRequires:	gettext-devel
 BuildRequires:	popt-devel
-BuildRequires:	ffmpeg3.4
 
 %global debug_package %{nil}
 
@@ -38,6 +38,7 @@ BuildRequires:	ffmpeg3.4
 
 %prep
 %setup -q
+%patch0 -p1
 
 
 %build
