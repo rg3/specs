@@ -11,14 +11,14 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		ffmpeg
-Version:	4.0
+Version:	4.0.1
 Release:	1%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
 Group:		Applications/Multimedia
 License:	Unredistributable
 URL:		http://ffmpeg.org/
-Source0:	%{name}-%{version}.tar.gz
+Source0:	%{name}-%{version}.tar.bz2
 
 BuildRequires:	yasm
 BuildRequires:	openssl-devel
