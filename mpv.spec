@@ -54,7 +54,6 @@ mkdir -p %{buildroot}/%{_sysconfdir}/%{name}
 %files
 %doc [A-Z][A-Z][A-Z]*
 %{_sysconfdir}/%{name}
-%{_mandir}/man*/*
 %{_bindir}/*
 %{_datadir}/*/*/*/*/*
 %{_datadir}/applications/*
