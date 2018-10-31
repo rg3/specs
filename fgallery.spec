@@ -12,7 +12,7 @@
 #
 Name:		fgallery
 Version:	1.8.2
-Release:	2%{?dist}
+Release:	1%{?dist}
 Summary:	Minimalistic javascript photo gallery
 
 Group:		Applications/Multimedia

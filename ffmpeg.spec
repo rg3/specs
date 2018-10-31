@@ -12,7 +12,7 @@
 #
 Name:		ffmpeg
 Version:	4.0.2
-Release:	2%{?dist}
+Release:	1%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
 Group:		Applications/Multimedia
