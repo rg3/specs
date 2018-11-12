@@ -12,7 +12,7 @@
 #
 Name:		mpv
 Version:	0.29.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Media Player
 
 Group:		Applications/Multimedia
@@ -25,6 +25,7 @@ BuildRequires:	luajit-devel
 BuildRequires:	libass-devel
 BuildRequires:	libcdio-paranoia-devel
 BuildRequires:	libv4l-devel
+BuildRequires:	python3-docutils
 
 %global debug_package %{nil}
 
@@ -54,6 +55,7 @@ mkdir -p %{buildroot}/%{_sysconfdir}/%{name}
 %files
 %doc [A-Z][A-Z][A-Z]*
 %{_sysconfdir}/%{name}
+%{_mandir}/man*/*
 %{_bindir}/*
 %{_datadir}/*/*/*/*/*
 %{_datadir}/applications/*
