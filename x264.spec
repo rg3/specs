@@ -15,7 +15,6 @@ Version:	20190317_1045_git72db4377
 Release:	1%{?dist}
 Summary:	H.264 library
 
-Group:		Applications/Multimedia
 License:	GPLv2
 URL:		http://www.videolan.org/developers/x264.html
 Source0:	%{name}-%{version}.tar.gz

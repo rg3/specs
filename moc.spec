@@ -15,7 +15,6 @@ Version:	2.5.2
 Release:	2%{?dist}
 Summary:	Music On Console
 
-Group:		Applications/Multimedia
 License:	GPLv2
 URL:		http://moc.daper.net/
 Source0:	%{name}-%{version}.tar.bz2

@@ -15,7 +15,6 @@ Version:	4.1.3
 Release:	1%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
-Group:		Applications/Multimedia
 License:	Unredistributable
 URL:		http://ffmpeg.org/
 Source0:	%{name}-%{version}.tar.bz2

@@ -15,7 +15,6 @@ Version:	2.3.13
 Release:	1%{?dist}
 Summary:	Compilation database generator for clang tooling
 
-Group:		Development/Tools
 License:	GPLv3
 URL:		https://github.com/rizsotto/Bear
 Source0:	Bear-%{version}.tar.gz

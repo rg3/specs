@@ -15,7 +15,6 @@ Version:	12
 Release:	1%{?dist}
 Summary:	Eric Welsh's GUS patches for TiMidity
 
-Group:		Applications/Multimedia
 License:	Proprietary
 Source0:	eawpats12_full.tar.gz
 BuildArch:	noarch

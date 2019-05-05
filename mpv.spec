@@ -15,7 +15,6 @@ Version:	0.29.1
 Release:	4%{?dist}
 Summary:	Media Player
 
-Group:		Applications/Multimedia
 License:	GPLv3
 URL:		http://mpv.io/
 Source0:	%{name}-%{version}.tar.gz

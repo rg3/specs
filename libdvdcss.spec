@@ -15,7 +15,6 @@ Version:	1.4.1
 Release:	1%{?dist}
 Summary:	CSS decryption library
 
-Group:		Applications/Multimedia
 License:	GPLv2
 URL:		http://www.videolan.org/developers/libdvdcss.html
 Source0:	%{name}-%{version}.tar.bz2

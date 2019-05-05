@@ -15,7 +15,6 @@ Version:	11.1.2
 Release:	1%{?dist}
 Summary:	Small group of tools taken from BSD systems
 
-Group:		Applications/System
 License:	BSD
 URL:		https://packages.debian.org/unstable/utils/bsdmainutils
 Source0:	%{name}_%{version}.tar.gz

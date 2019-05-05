@@ -15,7 +15,6 @@ Version:	5.7.5
 Release:	1%{?dist}
 Summary:	RAR archive extractor
 
-Group:		Applications/Archiving
 License:	Proprietary
 URL:		http://www.rarlab.com/
 Source0:	unrarsrc-%{version}.tar.gz

@@ -15,7 +15,6 @@ Version:	1.2.1
 Release:	1%{?dist}
 Summary:	Password-based encryption utility
 
-Group:		Applications/File
 License:	BSD
 URL:		https://www.tarsnap.com/scrypt.html
 Source0:	%{name}-%{version}.tgz

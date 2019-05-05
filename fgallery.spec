@@ -15,7 +15,6 @@ Version:	1.8.2
 Release:	1%{?dist}
 Summary:	Minimalistic javascript photo gallery
 
-Group:		Applications/Multimedia
 License:	GPLv2+
 URL:		https://www.thregr.org/~wavexx/software/fgallery/
 Source0:	%{name}-%{version}.zip
