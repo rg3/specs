@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		bear-compdb
-Version:	2.4.0
+Version:	2.4.1
 Release:	1%{?dist}
 Summary:	Compilation database generator for clang tooling
 
@@ -46,6 +46,7 @@ sed -i -e '1s,^#!/usr/bin/env python$,#!/usr/bin/python2,' %{buildroot}%{_bindir
 %{_libdir}/*
 %{_mandir}/man1/*
 %{_datadir}/doc/bear
+%{_datadir}/bash-completion/completions/bear
 
 
 %changelog
