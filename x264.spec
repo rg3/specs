@@ -1,6 +1,6 @@
 # SPEC file for x264
 #
-# Written in 2015-2018 by Ricardo Garcia <r@rg3.name>
+# Written in 2015-2019 by Ricardo Garcia <r@rg3.name>
 #
 # To the extent possible under law, the author(s) have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		x264
-Version:	20190317_1045_git72db4377
+Version:	20190721_0842_git34c06d1c
 Release:	1%{?dist}
 Summary:	H.264 library
 
