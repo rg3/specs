@@ -12,7 +12,7 @@
 #
 Name:		mpv
 Version:	0.29.1
-Release:	4%{?dist}
+Release:	5%{?dist}
 Summary:	Media Player
 
 License:	GPLv3
