@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		bear-compdb
-Version:	2.4.1
+Version:	2.4.2
 Release:	1%{?dist}
 Summary:	Compilation database generator for clang tooling
 
