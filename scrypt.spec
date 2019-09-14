@@ -1,6 +1,6 @@
 # SPEC file for scrypt
 #
-# Written in 2018 by Ricardo Garcia <r@rg3.name>
+# Written in 2018-2019 by Ricardo Garcia <r@rg3.name>
 #
 # To the extent possible under law, the author(s) have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		scrypt
-Version:	1.2.1
+Version:	1.3.0
 Release:	1%{?dist}
 Summary:	Password-based encryption utility
 
