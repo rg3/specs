@@ -11,8 +11,8 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		mpv
-Version:	0.29.1
-Release:	5%{?dist}
+Version:	0.30.0
+Release:	1%{?dist}
 Summary:	Media Player
 
 License:	GPLv3
@@ -58,6 +58,7 @@ mkdir -p %{buildroot}/%{_sysconfdir}/%{name}
 %{_bindir}/*
 %{_datadir}/*/*/*/*/*
 %{_datadir}/applications/*
+%{_datadir}/zsh/site-functions/_mpv
 %{_docdir}/%{name}
 
 
