@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		unrar
-Version:	5.8.3
+Version:	5.8.4
 Release:	1%{?dist}
 Summary:	RAR archive extractor
 
