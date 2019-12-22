@@ -12,7 +12,7 @@
 #
 Name:		ffmpeg
 Version:	4.2.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
 License:	Unredistributable
