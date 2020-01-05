@@ -1,6 +1,6 @@
 # SPEC file for mpv
 #
-# Written in 2015-2018 by Ricardo Garcia <r@rg3.name>
+# Written in 2015-2019 by Ricardo Garcia <r@rg3.name>
 #
 # To the extent possible under law, the author(s) have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		mpv
-Version:	0.30.0
+Version:	0.31.0
 Release:	1%{?dist}
 Summary:	Media Player
 
