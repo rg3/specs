@@ -1,6 +1,6 @@
 # SPEC file for ffmpeg
 #
-# Written in 2015-2019 by Ricardo Garcia <r@rg3.name>
+# Written in 2015-2020 by Ricardo Garcia <r@rg3.name>
 #
 # To the extent possible under law, the author(s) have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
@@ -11,8 +11,8 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		ffmpeg
-Version:	4.2.1
-Release:	2%{?dist}
+Version:	4.2.2
+Release:	1%{?dist}
 Summary:	Multimedia framework, libraries and tools
 
 License:	Unredistributable
