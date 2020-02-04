@@ -1,6 +1,6 @@
 # SPEC file for Bear
 #
-# Written in 2019 by Ricardo Garcia <r@rg3.name>
+# Written in 2019-2020 by Ricardo Garcia <r@rg3.name>
 #
 # To the extent possible under law, the author(s) have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		bear-compdb
-Version:	2.4.2
+Version:	2.4.3
 Release:	1%{?dist}
 Summary:	Compilation database generator for clang tooling
 
