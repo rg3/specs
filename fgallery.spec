@@ -12,7 +12,7 @@
 #
 Name:		fgallery
 Version:	1.8.2
-Release:	1%{?dist}
+Release:	3%{?dist}
 Summary:	Minimalistic javascript photo gallery
 
 License:	GPLv2+
@@ -30,8 +30,7 @@ Requires:	perl-Cpanel-JSON-XS
 Requires:	jpegoptim
 Requires:	pngcrush
 Requires:	p7zip
-Requires:	python2
-Requires:	PyQt4
+Requires:	python3-PyQt4
 
 %global debug_package %{nil}
 
@@ -52,7 +51,7 @@ mkdir -p %{buildroot}%{_datarootdir}/applications
 mkdir -p %{buildroot}%{_bindir}
 mkdir -p %{buildroot}%{_mandir}/man1
 
-sed -i -e 's,^#!/usr/bin/env python$,#!/usr/bin/python2,' utils/fcaption
+sed -i -e 's,^#!/usr/bin/env python$,#!/usr/bin/python3,' utils/fcaption
 gzip -9 %{name}.1
 cp -R * %{buildroot}%{_datarootdir}/%{name}/.
 
