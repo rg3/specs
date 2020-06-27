@@ -11,13 +11,13 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		bsdmainutils
-Version:	12.1.1
+Version:	12.1.2
 Release:	1%{?dist}
 Summary:	Small group of tools taken from BSD systems
 
 License:	BSD
 URL:		https://packages.debian.org/unstable/utils/bsdmainutils
-Source0:	%{name}_%{version}.tar.gz
+Source0:	%{name}_%{version}.tar.xz
 
 BuildRequires:	libbsd-devel
 
@@ -28,7 +28,7 @@ BuildRequires:	libbsd-devel
 
 
 %prep
-%setup -q -n %{name}-%{version}
+%setup -q -n %{name}
 
 
 %build
