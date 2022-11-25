@@ -17,7 +17,7 @@ Summary:	Nautilus extension with Dropbox integration
 
 License:	GPLv3
 URL:		https://github.com/dropbox/nautilus-dropbox
-Source0:	%{name}-%{version}.tgz
+Source0:	%{name}-%{version}.tar.gz
 
 BuildRequires:	gnome-common
 BuildRequires:	nautilus-devel
