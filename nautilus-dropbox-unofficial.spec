@@ -12,7 +12,7 @@
 #
 Name:		nautilus-dropbox-unofficial
 Version:	2022.11.25
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Nautilus extension with Dropbox integration
 
 License:	GPLv3
@@ -38,14 +38,15 @@ BuildRequires:	gtk4-devel
 ./autogen.sh
 make %{?_smp_mflags}
 
+
 %install
 make install DESTDIR=%{buildroot}
-rm -fr %{buildroot}/%{_bindir}
-rm -fr %{buildroot}/%{_datadir}
 
 
 %files
-%{_libdir}/nautilus/extensions-4/*
+%{_bindir}
+%{_datadir}
+%{_libdir}
 
 
 %changelog
