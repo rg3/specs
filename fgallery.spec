@@ -1,6 +1,6 @@
 # SPEC file for fgallery
 #
-# Written in 2018,2020 by Ricardo Garcia <r@rg3.name>
+# Written in 2018,2020,2023 by Ricardo Garcia <r@rg3.name>
 #
 # To the extent possible under law, the author(s) have dedicated all copyright
 # and related and neighboring rights to this software to the public domain
@@ -11,14 +11,13 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		fgallery
-Version:	1.8.2
-Release:	4%{?dist}
+Version:	1.9.1
+Release:	1%{?dist}
 Summary:	Minimalistic javascript photo gallery
 
 License:	GPLv2+
 URL:		https://www.thregr.org/~wavexx/software/fgallery/
 Source0:	%{name}-%{version}.zip
-Patch0:		%{name}-remove-cuts.diff
 BuildArch:	noarch
 
 Requires:	perl
@@ -40,7 +39,6 @@ Requires:	python3-PyQt4
 
 %prep
 %setup -q
-%patch0 -p1
 
 
 %build
