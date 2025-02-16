@@ -11,7 +11,7 @@
 # <http://creativecommons.org/publicdomain/zero/1.0/>.
 #
 Name:		scrypt
-Version:	1.3.1
+Version:	1.3.3
 Release:	1%{?dist}
 Summary:	Password-based encryption utility
 
